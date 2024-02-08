@@ -23,3 +23,35 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.active {
+  background-color: aqua;
+}
+
+:disabled {
+  color: black;
+}
+
+.exercise-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.exercise-card {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #0005;
+  color: white;
+}
+
+.exercise-card > img {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
